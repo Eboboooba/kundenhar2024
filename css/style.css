@@ -10,12 +10,13 @@
 body {
     margin:0;
 }
+
  
 #wrapper1{
     background-color: #E2C290;
     display: grid;
     grid-template-columns: 20% 1fr 30%;
-    grid-template-rows: 100px 700px 800px 500px 100px;
+    grid-template-rows: 100px 700px 400px 400px 100px;
     grid-template-areas:
         'g  g  g'
         'ma ma ma'
@@ -59,37 +60,97 @@ nav {
 }
 #section1{
     grid-area: se;
-    background-color: #E74C3C;
+    background-color:#E74C3C;
     display: flex;
     flex-direction: column;
+    padding: 2rem;
+}
 
+article {
+    display: block;
+    unicode-bidi: isolate;
+    background-color:#E2C290;
 }
 
 #bild {
     grid-area: img;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #E74C3C;
+
 }
 
 #article1{
     grid-area: ar;
-    background-color: beige;
+    background-color:#E74C3C ;
 }
 
 #aside1{
     grid-area: as;
-    background-color: blue;
+    background-color: #E74C3C;
 }
 
-#footer1{
+.footer{
     grid-area: ft;
-    background-color: aquamarine;
+    background-color: #E2C290;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hide{
     grid-area: g;
-    background-color: aliceblue;
+    background-color: #E74C3C;
 }
 
 a{
     text-decoration: none;
+    color: black;
+}
 
+#wrapper2{
+    padding: 1rem;
+    background-color: #E2C290;
+    display: grid;
+    grid-template-columns: 20% 1fr 30%;
+    grid-template-rows: 100px 700px 400px 400px 100px;
+    grid-template-areas:
+        'g  g  g'
+        'ma1 ma1 ma1'
+        'pa1 pa1 as2'
+        'as3 pa2 pa2'
+        ''
+        'ft ft ft'
+ }
+#main2{
+    grid-area: ma1;
+    background-color: #E74C3C;
+ }
+#paragraf1{
+    grid-area: pa1;
+    background-color: #E74C3C;
+}
+
+#aside2{
+    grid-area: as2;
+    background-color: #E74C3C;
+}
+
+#paragraf2{
+    grid-area: pa1;
+    background-color: #E74C3C;
+}
+#aside3{
+    grid-area: as2;
+    background-color: #E74C3C;
+}
+#paragraf3{
+    grid-area: pa1;
+    background-color: #E74C3C;
+}
+#aside4{
+    grid-area: as2;
+    background-color: #E74C3C;
 }
