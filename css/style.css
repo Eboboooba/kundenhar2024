@@ -41,7 +41,7 @@ p {
     position: fixed;
     top: 0;
     display: grid;
-    grid-template-columns: fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 70px 30px;
     grid-template-areas:
         'hd'
