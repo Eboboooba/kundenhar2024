@@ -11,8 +11,19 @@ body {
     margin:0;
 }
 
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap');
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
  
-#wrapper1{
+#wrapper1 {
     background-color: #E2C290;
     display: grid;
     grid-template-columns: 20% 1fr 30%;
@@ -22,9 +33,9 @@ body {
         'ma ma ma'
         'img se se'
         'ar ar as'
-        'ft ft ft'
- }
-
+        'ft ft ft';
+    gap: 20px; 
+}
  .headline{
     width: 100% ;
     position: fixed;
@@ -94,7 +105,7 @@ article {
 
 .footer{
     grid-area: ft;
-    background-color: #E2C290;
+    background-color:#E74C3C;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -111,46 +122,80 @@ a{
 }
 
 #wrapper2{
-    padding: 1rem;
+    
     background-color: #E2C290;
     display: grid;
     grid-template-columns: 20% 1fr 30%;
-    grid-template-rows: 100px 700px 400px 400px 100px;
+    grid-template-rows: 100px 400px 400px 400px 300px 100px;
     grid-template-areas:
         'g  g  g'
         'ma1 ma1 ma1'
         'pa1 pa1 as2'
         'as3 pa2 pa2'
-        ''
+        'as4 pa3 as5'
         'ft ft ft'
  }
 #main2{
     grid-area: ma1;
-    background-color: #E74C3C;
+    background-color:#5E574D;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
  }
 #paragraf1{
     grid-area: pa1;
-    background-color: #E74C3C;
+    background-color:#E2C290;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #aside2{
     grid-area: as2;
     background-color: #E74C3C;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  
+   
 }
 
 #paragraf2{
-    grid-area: pa1;
-    background-color: #E74C3C;
+    grid-area: pa2;
+    background-color: #519E8A;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #aside3{
-    grid-area: as2;
-    background-color: #E74C3C;
+    grid-area: as3;
+    background-color:   #E74C3C;
+    padding: 10px;
 }
 #paragraf3{
-    grid-area: pa1;
-    background-color: #E74C3C;
+    grid-area: pa3;
+    background-color: #5E574D;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #aside4{
-    grid-area: as2;
+    grid-area: as4;
+    background-color: #7d271d;
+    padding: 10px;
+}
+
+#aside5{
+    grid-area: as5;
     background-color: #E74C3C;
+    padding: 10px;
+
+}
+
+p{
+    font-size: 21px;
 }
